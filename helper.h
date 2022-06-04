@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-template <class T>
-void print(T&&) {
+template <class... T>
+void print(T&&...) {
     std::cerr << __PRETTY_FUNCTION__ << "\n";
 }
 
